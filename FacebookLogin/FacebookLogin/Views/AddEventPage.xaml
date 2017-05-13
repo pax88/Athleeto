@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.AddEventPage" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+	<ContentPage.Content>
+
+
+
+		<StackLayout BackgroundColor="#2e2e2e" Spacing="0">
+	
+			
+	<StackLayout Padding="5" BackgroundColor="#4f514f" >
+			<Label FontSize="15" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text=" "></Label>
+
+			<Label FontSize="20" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text="ATHLEETO"></Label>
+
+			</StackLayout>
+			
+		<StackLayout BackgroundColor="#2e2e2e" Padding="5" Orientation="Horizontal">
+		<Label TextColor="#b59272"  x:Name="DateMonthLabel" Margin="25,0,0,0"  HorizontalOptions="CenterAndExpand" Font="Lato-Light" FontSize="20" BackgroundColor="#2e2e2e" HorizontalTextAlignment="Center"  Text="Add Event"></Label>
+		</StackLayout>
+
+	
+
+
+
+		<ScrollView Orientation="Horizontal" BackgroundColor="#50514f">
+		<StackLayout  Padding="0"  Orientation="Horizontal" HeightRequest="10" VerticalOptions="Start">
+		</StackLayout>
+		</ScrollView>	
+
+		<ScrollView BackgroundColor="#50514f" Padding="20,10,20,20">
+			<Entry PlaceholderColor="#b59272" BackgroundColor="#50514f" TextColor="#b59272" x:Name="EventName"  HorizontalTextAlignment="Center" Placeholder="Event Name"></Entry>
+		</ScrollView>
+
+			
+		<StackLayout BackgroundColor="#50514f" Padding="0,0,0,15">
+	      <DatePicker BackgroundColor="#50514f" TextColor="#b59272" x:Name="EventDate"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}">
+	         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+<!--	         <DatePicker.MinimumDate>
+	            <sys:DateTime x:FactoryMethod="Parse">
+	               <x:Arguments>
+	                  <x:String>Jan 1 2000</x:String>
+	               </x:Arguments>
+	            </sys:DateTime>
+	         </DatePicker.MinimumDate>
+	         <DatePicker.MaximumDate>
+	            <sys:DateTime x:FactoryMethod="Parse">
+	               <x:Arguments>
+	                  <x:String>Dec 31 2050</x:String>
+	               </x:Arguments>
+	            </sys:DateTime>
+	         </DatePicker.MaximumDate>-->
+	      </DatePicker>
+	   </StackLayout>
+
+			<StackLayout  BackgroundColor="#50514f"  Padding="0,0,0,15">
+			<StackLayout Orientation="Horizontal">
+			<TimePicker BackgroundColor="#50514f" TextColor="#b59272" x:Name="EventTime"  HorizontalOptions="EndAndExpand"   Format="HH:mm">
+			</TimePicker>
+			<Label TextColor="#b59272" Margin="0,4,0,0" Text="-"></Label>
+
+			<TimePicker BackgroundColor="#50514f" TextColor="#b59272" x:Name="EventTimeEnding"  HorizontalOptions="StartAndExpand"   Format="HH:mm">
+			</TimePicker>
+				</StackLayout>
+				<StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
+				<Label TextColor="#b59272" HorizontalTextAlignment="Center" Text="Team Training :"></Label>
+				<Switch BackgroundColor="#50514f" x:Name="EventTeamEvent" Toggled="ToggledSwitch" HorizontalOptions="Center"></Switch>
+				</StackLayout>
+				
+			</StackLayout>
+
+			
+	
+			<StackLayout VerticalOptions="End" Padding="20" x:Name="ButtonStackLayout">
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#c8a07c" FontSize="26" Text="Add Event" Clicked="OnAddEventClicked"></Button> 
+				<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#f75a54" FontSize="26" Text="Back" Clicked="OnBackEventClicked"></Button> 
+
+		</StackLayout>
+
+
+
+</StackLayout>
+
+
+
+		
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.DiarySummary">
+	<ContentPage.Content>
+
+
+
+		<StackLayout BackgroundColor="#4f504f" Spacing="0">
+	
+		<!--	<StackLayout Padding="5" BackgroundColor="#3d3d4a" >
+			<Label FontSize="15" TextColor="#dabc2c"  BackgroundColor="#3d3d4a" HorizontalTextAlignment="Center"  Text=" "></Label>
+
+			<Label FontSize="20" TextColor="#dabc2c"  BackgroundColor="#3d3d4a" HorizontalTextAlignment="Center"  Text="ATHLEETO"></Label>
+
+			</StackLayout>
+			
+		<StackLayout BackgroundColor="White" Padding="5" >
+		<Label x:Name="DateMonthLabel" Font="Lato-Light" FontSize="20" BackgroundColor="White" HorizontalTextAlignment="Center"  Text="Diary Input"></Label>
+		</StackLayout>-->
+
+
+
+			
+
+				
+
+
+
+
+		<ScrollView BackgroundColor="#4f504f" Orientation="Vertical">
+		<StackLayout BackgroundColor="#4f504f" Padding="20" x:Name="ButtonStackLayout">
+	
+		</StackLayout>
+		</ScrollView>
+
+</StackLayout>
+
+		
+	</ContentPage.Content>
+</ContentPage>

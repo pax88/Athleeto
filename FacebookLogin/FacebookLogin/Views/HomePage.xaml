@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.HomePage">
+	<ContentPage.Content>
+
+
+
+		<StackLayout BackgroundColor="#4f514f" Spacing="0">
+			<StackLayout Padding="5" BackgroundColor="#4f514f" >
+			<Label FontSize="15" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text=" "></Label>
+
+			<Label FontSize="20" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text="ATHLEETO"></Label>
+
+			</StackLayout>
+			
+		<StackLayout BackgroundColor="#2e2e2e" Padding="5" Orientation="Horizontal">
+		<Label TextColor="#b59272"  x:Name="DateMonthLabel" Margin="25,0,0,0"  HorizontalOptions="CenterAndExpand" Font="Lato-Light" FontSize="20" BackgroundColor="#2e2e2e" HorizontalTextAlignment="Center"  Text="JANUARY 2016"></Label>
+		<Button  Text="" Image="calendar.png" VerticalOptions="EndAndExpand" HeightRequest="20" Clicked="OnCalendarOpen"/>
+		</StackLayout>
+
+				<StackLayout BackgroundColor="#2e2e2e" Padding="80,5">
+				<BoxView Color="#524940" HeightRequest="2" ></BoxView>
+				<!--< ProgressBar HeightRequest="5" Progress="0" ></ProgressBar>-->
+
+			</StackLayout>
+
+			
+<!--	<ScrollView Orientation="Horizontal" BackgroundColor="White">-->
+
+			
+
+			
+<StackLayout Padding="0,-5,0,0"  x:Name="DateButtonStackLayout" BackgroundColor="#2e2e2e"   Orientation="Horizontal"  HeightRequest="50" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+
+	<Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="01" Font="Lato-Light" FontSize="20" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="02" Font="Lato-Light" FontSize="20" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="03" Font="Lato-Light" FontSize="20" FontAttributes="Italic"  />
+    <Button  BackgroundColor="Transparent" TextColor="#f5d94a" Text="04" Font="Lato-Light" FontSize="30" FontAttributes="Italic"/>
+    <Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="05" Font="Lato-Light" FontSize="20" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="06" Font="Lato-Light" FontSize="20" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="#b08f70" Text="07" Font="Lato-Light" FontSize="20" FontAttributes="Italic" />
+
+</StackLayout > 
+<Grid BackgroundColor="#2e2e2e" HeightRequest="20" Margin="0, -10 , 0 , 0" Padding="0,0,0,10" HorizontalOptions="CenterAndExpand">
+  <Grid.RowDefinitions>
+	      <RowDefinition Height="*" />
+
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	      <ColumnDefinition Width="*" />
+	      <ColumnDefinition Width="*" />
+	      <ColumnDefinition Width="*" />
+	      <ColumnDefinition Width="*" />
+	      <ColumnDefinition Width="*" />      
+		  <ColumnDefinition Width="*" />
+	      <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+				
+  <Label x:Name="date1" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="MON" Grid.Row="0" Grid.Column="0" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date2" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="TUE" Grid.Row="0" Grid.Column="1" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date3" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="WED" Grid.Row="0" Grid.Column="2" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date4" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="THU" Grid.Row="0" Grid.Column="3" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date5" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="FRI" Grid.Row="0" Grid.Column="4" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date6" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="SAT" Grid.Row="0" Grid.Column="5" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+  <Label x:Name="date7" TextColor="#b08f70"  HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="SUN" Grid.Row="0" Grid.Column="6" FontSize="5" Font="Lato-Light" FontAttributes="Italic"/>
+
+</Grid>
+
+		<!--		
+<StackLayout x:Name="DateButtonTXTStackLayout" BackgroundColor="White"   Orientation="Horizontal"  HeightRequest="50" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+
+	<Button  BackgroundColor="Transparent" TextColor="Black" Text="MON" Font="Lato-Light" FontSize="18" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="Black" Text="TUE" Font="Lato-Light" FontSize="18" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="Black" Text="WED" Font="Lato-Light" FontSize="18" FontAttributes="Italic"  />
+    <Button  BackgroundColor="Transparent" TextColor="Black" Text="THU" Font="Lato-Light" FontSize="18" FontAttributes="Italic"  />
+	<Button  BackgroundColor="Transparent" TextColor="Black" Text="FRI" Font="Lato-Light" FontSize="18" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="Black" Text="SAT" Font="Lato-Light" FontSize="18" FontAttributes="Italic" />
+    <Button  BackgroundColor="Transparent" TextColor="Black" Text="SUN" Font="Lato-Light" FontSize="18" FontAttributes="Italic" />
+
+</StackLayout > 
+	</ScrollView>	-->
+
+		<ScrollView Orientation="Vertical">
+		<StackLayout Padding="20" x:Name="ButtonStackLayout">
+	
+	
+<!--	
+
+					<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+		<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#d1d1d1" FontSize="26" Text="asd"></Button> 
+-->
+				
+
+		</StackLayout>
+		</ScrollView>
+
+		<StackLayout BackgroundColor="#2e2e2e" VerticalOptions="EndAndExpand" Padding="10">
+			<Label x:Name="TitlePerformanceLabel" TextColor="#b08f70" HorizontalTextAlignment="Center"  Text="Training load"></Label>
+			<Label x:Name="YouPerformanceLabel" TextColor="#b08f70" Font="Lato-Light"  HorizontalOptions="Center" Text="You"></Label>
+
+			<StackLayout BackgroundColor="#2e2e2e" VerticalOptions="EndAndExpand" Padding="10,10" >
+			<ProgressBar x:Name="UserPerformanceSlider"   Progress="0.6" ></ProgressBar>
+			</StackLayout>
+			<Label x:Name="TeamPerformanceLabel" TextColor="#b08f70" Font="Lato-Light"  HorizontalOptions="Center" Text="Team"></Label>
+			<StackLayout BackgroundColor="#2e2e2e" VerticalOptions="EndAndExpand" Padding="10,10" >
+			<ProgressBar x:Name="TeamPerformanceSlider" Scale="1" Progress="0.8" ></ProgressBar>
+	
+			</StackLayout>
+		</StackLayout>
+</StackLayout>
+
+
+	</ContentPage.Content>
+</ContentPage>
+

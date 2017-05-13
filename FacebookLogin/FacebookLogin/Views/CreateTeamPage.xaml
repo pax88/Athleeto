@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.CreateTeamPage">
+	<ContentPage.Content>
+
+	<Grid>
+	<Image Source="bgClean.png" Aspect="AspectFill" />
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+			
+        <StackLayout VerticalOptions="StartAndExpand" >
+            <!-- top controls 
+           
+				<Label  VerticalOptions="Center" HorizontalOptions="CenterAndExpand"  Text="Team name"></Label>-->
+					
+        </StackLayout>
+			
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <!-- middle controls -->
+				 <Entry Placeholder="Team Name" VerticalOptions="Center" Completed="OnTextCompleted" TextChanged="OnTextChanged"/>
+        </StackLayout>
+			
+        <StackLayout  VerticalOptions="EndAndExpand"  >
+            <!-- bottom controls -->
+				<Button Text="Create"  
+	            Clicked="OnCreateClicked" BackgroundColor="#033358" TextColor="White"/>
+        </StackLayout>
+			
+    	</StackLayout>
+		
+	
+
+	</Grid>
+
+			
+
+				
+
+
+
+	</ContentPage.Content>
+</ContentPage>

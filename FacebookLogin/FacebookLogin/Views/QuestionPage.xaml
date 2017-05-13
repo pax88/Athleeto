@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.QuestionPage">
+	<ContentPage.Content>
+	<Grid BackgroundColor="#4f514f">
+        <!--<Image Source="Background_login.png" Aspect="AspectFill" />-->
+				<!--<Image Source="bgClean.png" Aspect="AspectFill" />-->
+
+	
+			
+				<ScrollView>
+		
+		   	<StackLayout x:Name="aa1" Padding="5" BackgroundColor="#4f514f" >
+					<Label FontSize="15" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text=" "></Label>
+
+					<Label FontSize="20" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text="ATHLEETO"></Label>
+
+					</StackLayout>
+					
+					<StackLayout x:Name="aa2" BackgroundColor="#629e61" Padding="5" Orientation="Horizontal">
+					<Label TextColor="White"   Margin="0,0,0,0"  HorizontalOptions="CenterAndExpand" Font="Lato-Light" FontSize="20" BackgroundColor="#629e61" HorizontalTextAlignment="Center"  Text="VolleyBall"></Label>
+					</StackLayout>
+				
+	
+			<StackLayout x:Name="MainStackLayoutQuestions" BackgroundColor="#4f514f">
+
+	     
+        
+
+
+
+				
+			</StackLayout >
+			</ScrollView>
+
+				<!--
+             	 <Label 
+				HorizontalOptions="Center"
+						VerticalOptions="Start"
+            Text="Question"
+			TextColor="White"
+			FontAttributes="Bold"
+            FontSize="40"
+            x:Name="QuestionLabel"
+				/>
+
+			
+			<StackLayout VerticalOptions = "LayoutOptions.End" Scale="1" Padding="20" Spacing="20">
+
+              <Label
+					Text="1" 
+		            HorizontalOptions="Center"
+					VerticalOptions="Center"
+					TextColor="White"
+					FontAttributes="Bold"
+		            FontSize="40"
+					x:Name="SliderValue"
+					 />
+
+              <Slider ValueChanged="HandleValueChanged" x:Name="SliderInput" Minimum="0" Maximum="10" Value="{Binding LongTermGainsOrLosses, Mode=TwoWay}" Grid.Row="9" Grid.Column="0"/>
+
+   	 <Button 
+			BorderRadius="0"
+            Text="Svar1"
+			TextColor="White"
+			FontAttributes="Bold"
+            FontSize="40"
+            Clicked="Answer1Clicked"
+			x:Name="Answer1"
+            BackgroundColor="#033358"/>
+				
+			
+        </StackLayout>
+
+				-->
+    </Grid>
+		
+	</ContentPage.Content>
+</ContentPage>

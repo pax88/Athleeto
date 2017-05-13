@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{F8376E21-D097-4919-9058-EBCDF59E8BB9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin/App.xaml.cs">
+    <Files>
+      <File FileName="FacebookLogin/FacebookLogin/Views/FacebookProfilePage.xaml.cs" Line="6" Column="34" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="23" Column="27" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/MainPage.xaml.cs" Line="14" Column="21" />
+      <File FileName="FacebookLogin/FacebookLogin/App.xaml.cs" Line="44" Column="16" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/MainTabbed.xaml.cs" Line="566" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FF6CDE5E-0D44-4604-8802-21B67344E32E" />
+  <MonoDevelop.Ide.ItemProperties.FacebookLogin.Droid PreferredExecutionTarget="Android.Nexus_5_API_22_x86" />
+</Properties>

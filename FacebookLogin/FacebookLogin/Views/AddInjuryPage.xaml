@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.AddInjuryPage">
+	<ContentPage.Content>
+
+
+
+		<StackLayout BackgroundColor="#2e2e2e" Spacing="0">
+	
+			
+		<StackLayout Padding="5" BackgroundColor="#4f514f" >
+				<Label FontSize="15" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text=" "></Label>
+
+				<Label FontSize="20" TextColor="#b08f70"  BackgroundColor="#4f514f" HorizontalTextAlignment="Center"  Text="ATHLEETO"></Label>
+
+		</StackLayout>
+			
+		<StackLayout BackgroundColor="#2e2e2e" Padding="5" Orientation="Horizontal">
+		<Label TextColor="#b59272"  x:Name="DateMonthLabel" HorizontalOptions="CenterAndExpand" Font="Lato-Light" FontSize="20" BackgroundColor="#2e2e2e" HorizontalTextAlignment="Center"  Text="Injurys"></Label>
+
+		</StackLayout>
+
+		<ScrollView>
+			<StackLayout BackgroundColor="#4f514f" VerticalOptions="End" Padding="20" x:Name="ButtonStackLayout">
+						<Entry PlaceholderColor="#b59272" BackgroundColor="#50514f" TextColor="#b59272" x:Name="SearchTermEntry"  HorizontalTextAlignment="Center" Placeholder="Search"></Entry>
+
+						<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Arm" ></Button> 
+
+						<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Leg" ></Button> 
+
+						<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+										<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+						<Button BorderRadius="0" WidthRequest="90"  TextColor="#c8a07c" Font="Lato-Light" BackgroundColor="#2e2e2e" FontSize="26" Text="Jumpers Knee" ></Button> 
+
+			</StackLayout>
+			</ScrollView>
+		<StackLayout BackgroundColor="#4f514f" VerticalOptions="End" Padding="20" >
+
+			<!--<Button BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#c8a17c" FontSize="26" Text="Add Injury" ></Button> -->
+
+			<Button Clicked="OnBackButtonClicked"  BorderRadius="0" WidthRequest="90"  TextColor="White" Font="Lato-Light" BackgroundColor="#f75a54" FontSize="26" Text="Back" ></Button> 
+
+		</StackLayout>
+
+
+</StackLayout>
+
+
+
+		
+	</ContentPage.Content>
+</ContentPage>

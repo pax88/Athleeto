@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookLogin.ChooseCoachOrPlayerPage">
+	<ContentPage.Content>
+
+
+		<Grid>
+        <Image Source="bgClean.png" Aspect="AspectFill" />
+        <StackLayout VerticalOptions = "LayoutOptions.End" Scale="1" Padding="20" Spacing="20">
+
+
+
+    <Button 
+						BorderRadius="0"
+            Text="Athlete"
+			TextColor="White"
+			FontAttributes="Bold"
+            FontSize="40"
+            Clicked="OnAthleteClicked"
+            BackgroundColor="#033358"/>
+        <Button 
+							BorderRadius="0"
+            Text="Coach"
+					FontAttributes="Bold"
+			TextColor="White"
+            FontSize="40"
+            Clicked="OnCoachClicked"
+            BackgroundColor="#033358"/>
+			
+        </StackLayout>
+    </Grid>
+
+
+		
+	</ContentPage.Content>
+</ContentPage>
