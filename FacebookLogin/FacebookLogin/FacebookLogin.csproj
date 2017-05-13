@@ -82,6 +82,7 @@
       <DependentUpon>AddInjuryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MyEntryComment.cs" />
+    <Compile Include="Views\PushNotificationsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MainPage.xaml">

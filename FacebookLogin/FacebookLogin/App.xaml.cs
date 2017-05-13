@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using XamForms.Controls;
 using System;
 using System.Collections.Generic;
+using Com.OneSignal;
 
 namespace FacebookLogin
 {
@@ -43,6 +44,8 @@ namespace FacebookLogin
 			  OneSignal.Current.StartInit("a6537203-18b2-4c90-9b2c-7102a2916c78")
 				.EndInit();
 
+
+			PushNotificationsHandler.instance.SheduleNotification();
         }
 
         protected override void OnStart()
