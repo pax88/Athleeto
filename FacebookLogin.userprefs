@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{F8376E21-D097-4919-9058-EBCDF59E8BB9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin/Views/HomePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin.iOS/Entitlements.plist">
     <Files>
       <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="638" Column="12" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml" Line="1" Column="1" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml" Line="50" Column="38" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/Info.plist" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/Entitlements.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
