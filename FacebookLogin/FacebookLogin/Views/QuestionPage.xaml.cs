@@ -957,6 +957,9 @@ namespace FacebookLogin
 
 			await Navigation.PopModalAsync();
 			await Navigation.PopModalAsync();
+
+			PushNotificationsHandler.instance.UpdatePushNotifcaions();
+
 		}
 
 		void HandleValueChanged(object sender, EventArgs e)

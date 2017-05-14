@@ -1,6 +1,5 @@
 using FacebookLogin.Views;
 using Xamarin.Forms;
-using XamForms.Controls;
 using System;
 using System.Collections.Generic;
 using Com.OneSignal;
@@ -45,7 +44,7 @@ namespace FacebookLogin
 				.EndInit();
 
 
-			PushNotificationsHandler.instance.SheduleNotification();
+
         }
 
         protected override void OnStart()

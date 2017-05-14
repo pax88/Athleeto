@@ -65,6 +65,9 @@ namespace FacebookLogin
 			await Navigation.PopModalAsync();
 			//NavigationUsed.RemovePage(nav.CurrentPage);
 
+			PushNotificationsHandler.instance.UpdatePushNotifcaions();
+
+
 		}
 
 	}

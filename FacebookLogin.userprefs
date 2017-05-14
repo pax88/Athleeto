@@ -1,19 +1,18 @@
 ﻿<Properties StartupConfiguration="{F8376E21-D097-4919-9058-EBCDF59E8BB9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin/Views/PushNotificationsHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin/Views/HomePage.xaml">
     <Files>
-      <File FileName="FacebookLogin/FacebookLogin/Views/FacebookProfilePage.xaml.cs" Line="6" Column="34" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="23" Column="27" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/MainPage.xaml.cs" Line="14" Column="21" />
-      <File FileName="FacebookLogin/FacebookLogin/App.xaml.cs" Line="44" Column="15" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/MainTabbed.xaml.cs" Line="566" Column="5" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/PushNotificationsHandler.cs" Line="6" Column="37" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="638" Column="12" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FF6CDE5E-0D44-4604-8802-21B67344E32E" />
+  <MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.6b20c5b5b0ba7cf778744f12b6cc5302c24489c3">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="JS93QX5GY3" TeamId="V886Y3D7NV" />
+  </MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FacebookLogin.Droid PreferredExecutionTarget="Android.Nexus_5_API_22_x86" />
 </Properties>
