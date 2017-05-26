@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using Com.OneSignal;
 using Com.OneSignal.Abstractions;
+using Plugin.LocalNotifications;
+using Xamarin.Forms;
 
 public class PushNotificationsHandler
 	{
@@ -19,14 +21,26 @@ public class PushNotificationsHandler
 
 		public PushNotificationsHandler()
 		{
-			
-		}
 
+		}
+		static int id = 0;
 		public void UpdatePushNotifcaions()
 		{
-
+			
+		if (Device.OS == TargetPlatform.iOS)
+		{ 
+		
+		}
+		else
+		{ 
+			id = 0;
+			for (int i = 0; i < 100; i++)
+			{
+				CrossLocalNotifications.Current.Cancel(i);
+			}
+		}
+			
 			Xamarin.Forms.DependencyService.Get<PushNotifications>().ClearNotifications();
-
 
 			List<FacebookLogin.Training> allTrainings = FacebookLogin.Database.GetAllTrainingsUser();
 			for (int i = 0; i < allTrainings.Count; i++)
@@ -43,14 +57,26 @@ public class PushNotificationsHandler
 					}
 				}
 			}
+
 		}
 
 
 		void AddNotification(DateTime aDate)
 		{ 
 			TimeSpan diff = aDate.Subtract(DateTime.Now);
+			Random rand1 = new Random();
+		if (Device.OS == TargetPlatform.iOS)
+		{
+			Xamarin.Forms.DependencyService.Get<PushNotifications>().SheduleNotification(diff.TotalSeconds, "Reminder", "You have to evaluate your pratice!");
+		}
+		else
+		{
+	
+			CrossLocalNotifications.Current.Show("Reminder", "You have to evaluate your pratice!", id, aDate.ToUniversalTime());
+			id++;
+		}
 
-			Xamarin.Forms.DependencyService.Get<PushNotifications>().SheduleNotification( diff.TotalSeconds, "Reminder", "You have to evaluate your pratice!");
+
 
 			//// This is if you want to do global notification via OneSignal backend
 			//OneSignal.Current.IdsAvailable((playerID, pushToken) =>

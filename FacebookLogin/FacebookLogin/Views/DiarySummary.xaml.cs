@@ -139,7 +139,7 @@ namespace FacebookLogin
 				}
 			};
 		}
-		public async void OnDoQuestionairClicked(object sender, EventArgs e)
+		public async void OnDoQuestionairClickedDiarySummary(object sender, EventArgs e)
 		{
 
 			string praticeId = "";
@@ -226,9 +226,9 @@ namespace FacebookLogin
 			{
 				string button2color = "2e2e2e";
 				string evaluatedText = "";
-				button2 = new TestLayoutProblem.MyButton
+				button2 = new TestLayoutProblem.MyButton2
 				{
-					TextColor = Color.Black,
+					TextColor = Color.FromHex("c7a07c"),
 					FontFamily = "Lato-Light",
 					BackgroundColor = Color.FromHex(button2color),
 					Text = timeForTraining.Month.ToString()+"/"+timeForTraining.Day.ToString()+ " "+aTraining.Name + evaluatedText,
@@ -237,7 +237,7 @@ namespace FacebookLogin
 
 				};
 
-				button = new TestLayoutProblem.MyButton
+				button = new TestLayoutProblem.MyButton2
 				{
 					BorderRadius = 0,
 					WidthRequest = 100,
@@ -252,8 +252,8 @@ namespace FacebookLogin
 			}
 			if (aTraining.HasBeenEvaluated == false)
 			{
-				button.Clicked += OnDoQuestionairClicked;
-				button2.Clicked += OnDoQuestionairClicked;
+				button.Clicked += OnDoQuestionairClickedDiarySummary;
+				button2.Clicked += OnDoQuestionairClickedDiarySummary;
 			}
 			else
 			{

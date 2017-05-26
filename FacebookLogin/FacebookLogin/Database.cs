@@ -378,10 +378,10 @@ namespace FacebookLogin
 
 		}
 
-		public async static Task<bool> AddDiaryInput(string userID, string teamID, string practiceID, string Questions, string QuestionIntesity, string Injury, string InjuryIntensity,string TrainingDuration)
+		public async static Task<bool> AddDiaryInput(string userID, string teamID, string practiceID, string Questions, string QuestionIntesity, string Injury, string InjuryIntensity,string TrainingDuration,string comment)
 		{
 
-			return await Backend_AddDiaryInput(userID, teamID, practiceID, Questions, QuestionIntesity,Injury,InjuryIntensity,TrainingDuration,APP_VERSION);
+			return await Backend_AddDiaryInput(userID, teamID, practiceID, Questions, QuestionIntesity,Injury,InjuryIntensity,TrainingDuration,APP_VERSION,comment);
 		}
 
 		public async static Task<bool> AddTeam(string aTeamName,string aCoachId,string aQuestions)
@@ -555,12 +555,12 @@ namespace FacebookLogin
 			return true;
 
 		}
-		static public async Task<bool> Backend_AddDiaryInput(string userID, string teamID, string practiceID, string Questions , string QuestionIntesity , string Injury, string InjuryIntensity,string TrainingDuration,string app_version)
+		static public async Task<bool> Backend_AddDiaryInput(string userID, string teamID, string practiceID, string Questions , string QuestionIntesity , string Injury, string InjuryIntensity,string TrainingDuration,string app_version,string comment)
 		{
 			if (client == null)
 				client = new System.Net.Http.HttpClient();		
 			client.BaseAddress = new Uri("http://athleeto.com/");
-			string call = "addDiaryInput.php?userID=" + userID + "&teamID=" + teamID.ToString() + "&practiceID=" + practiceID + "&Questions=" + Questions.ToString() + "&QuestionIntensity=" + QuestionIntesity.ToString()+"&injuries="+Injury+" &injuryIntensity="+InjuryIntensity+" &TrainingDuration="+TrainingDuration+"&AppVersion="+app_version;
+			string call = "addDiaryInput.php?userID=" + userID + "&teamID=" + teamID.ToString() + "&practiceID=" + practiceID + "&Questions=" + Questions.ToString() + "&QuestionIntensity=" + QuestionIntesity.ToString()+"&injuries="+Injury+" &injuryIntensity="+InjuryIntensity+" &TrainingDuration="+TrainingDuration+"&AppVersion="+app_version+"&comment="+comment;
 			var response = await client.GetAsync(call);
 			var placesJson = response.Content.ReadAsStringAsync().Result;
 			return true;

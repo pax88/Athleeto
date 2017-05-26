@@ -1,18 +1,33 @@
-﻿<Properties StartupConfiguration="{F8376E21-D097-4919-9058-EBCDF59E8BB9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookLogin/FacebookLogin.iOS/Entitlements.plist">
+﻿<Properties StartupConfiguration="{221F2FBA-ED1E-4FEB-A156-420B82A0FB20}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="638" Column="12" />
-      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml" Line="50" Column="38" />
-      <File FileName="FacebookLogin/FacebookLogin.iOS/Info.plist" />
-      <File FileName="FacebookLogin/FacebookLogin.iOS/Entitlements.plist" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/PushNotifications_iOS.cs" Line="16" Column="1" />
+      <File FileName="FacebookLogin/FacebookLogin/App.xaml.cs" Line="43" Column="4" />
+      <File FileName="FacebookLogin/FacebookLogin/Database.cs" Line="584" Column="47" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/MyBarRenderer.cs" Line="6" Column="1" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/AppDelegate.cs" Line="30" Column="2" />
+      <File FileName="FacebookLogin/FacebookLogin.Droid/MainActivity.cs" Line="24" Column="4" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/MainTabbed.xaml.cs" Line="111" Column="3" />
+      <File FileName="FacebookLogin/FacebookLogin.Droid/TabbedPageRenderer.cs" Line="44" Column="46" />
+      <File FileName="FacebookLogin/FacebookLogin.Droid/Resources/values/styles.xml" Line="31" Column="5" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/DiarySummary.xaml.cs" Line="240" Column="45" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/QuestionPage.xaml.cs" Line="1008" Column="25" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/HomePage.xaml.cs" Line="518" Column="4" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/MyButtonEventRenderer.cs" Line="1" Column="1" />
+      <File FileName="FacebookLogin/FacebookLogin.iOS/MyButtonRenderer.cs" Line="74" Column="37" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/PushNotificationsHandler.cs" Line="31" Column="5" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/AddEventPage.xaml.cs" Line="68" Column="38" />
+      <File FileName="FacebookLogin/FacebookLogin/Views/AddInjuryPage.xaml.cs" Line="20" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ActiveRuntime="Mono 4.6.2 (ac9e222)" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/patte88/Desktop/Unity Own Projekts/Athleeto/FacebookLogin/FacebookLogin/Views/AddEventPage.xaml.cs" relfile="FacebookLogin/FacebookLogin/Views/AddEventPage.xaml.cs" line="46" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.6b20c5b5b0ba7cf778744f12b6cc5302c24489c3">
+  <MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget">
     <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="JS93QX5GY3" TeamId="V886Y3D7NV" />
   </MonoDevelop.Ide.ItemProperties.FacebookLogin.iOS>
   <MultiItemStartupConfigurations />

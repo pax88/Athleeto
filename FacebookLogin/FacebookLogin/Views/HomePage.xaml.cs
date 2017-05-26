@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
+using Plugin.LocalNotifications;
 using Xamarin.Forms;
 
 namespace FacebookLogin
@@ -514,6 +515,7 @@ namespace FacebookLogin
 			//NavigationPage.SetHasBackButton(nav, false);
 			//nav.BarBackgroundColor = Color.FromHex("4f504f");
 			//nav.BackgroundColor = Color.FromHex("4f504f");
+
 
 			await Navigation.PushModalAsync(addevenpage);
 			

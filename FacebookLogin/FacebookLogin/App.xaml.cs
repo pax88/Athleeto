@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using System;
 using System.Collections.Generic;
 using Com.OneSignal;
-
+using Plugin.LocalNotifications;
 namespace FacebookLogin
 {
 
@@ -35,14 +35,16 @@ namespace FacebookLogin
 
 			//MainPage = new NavigationPage(new ChoseTeamPage(true));
 			//MainPage = new CreateTeamPage();
-            //MainPage = new NavigationPage(new MainCsPage())
-            //{
-            //    Title = "Facebook Login"
-            //};
+			//MainPage = new NavigationPage(new MainCsPage())
+			//{
+			//    Title = "Facebook Login"
+			//};
 
-			  OneSignal.Current.StartInit("a6537203-18b2-4c90-9b2c-7102a2916c78")
-				.EndInit();
-
+			if (Device.OS == TargetPlatform.iOS)
+			{
+				OneSignal.Current.StartInit("a6537203-18b2-4c90-9b2c-7102a2916c78")
+				  .EndInit();
+			}
 
 
         }

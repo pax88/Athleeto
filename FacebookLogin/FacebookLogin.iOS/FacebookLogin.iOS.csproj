@@ -118,13 +118,17 @@
     <BundleResource Include="Resources\loginfb.png" />
     <BundleResource Include="Resources\bgClean.png" />
     <BundleResource Include="Resources\Lato-Light.ttf" />
-    <BundleResource Include="Resources\workoutIcon.png" />
+    <BundleResource Include="Resources\workoutIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\homeIcon.png" />
     <BundleResource Include="Resources\settingsIcon.png" />
     <BundleResource Include="Resources\userInfo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="Resources\calendar.png" />
+    <BundleResource Include="Resources\calendar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\delete.png" />
     <BundleResource Include="Resources\done.png" />
     <BundleResource Include="Resources\backgroundlogin-568h%402x.png" />

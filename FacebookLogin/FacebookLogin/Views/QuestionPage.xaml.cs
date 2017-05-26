@@ -50,6 +50,7 @@ namespace FacebookLogin
 
 		protected override void OnAppearing()
 		{
+			pushedButtonInjury = false;
 			base.OnAppearing();
 			LabelListConnected.Clear();
 			LabelListDurationConnected.Clear();
@@ -61,8 +62,8 @@ namespace FacebookLogin
 
 			AddTopBar();
 			AddPraticeDuration2();
-			AddEntry2("Vem", "2", "asd");
-			AddEntry2("Vem", "2", "asd");
+			//AddEntry2("Vem", "2", "asd");
+			//AddEntry2("Vem", "2", "asd");
 			//AddEntry2("Vem", "2", "asd");
 			//AddEntry2("Vem", "2", "asd");
 			for (int i = 0; i < LabelList.Count; i++)
@@ -259,27 +260,30 @@ namespace FacebookLogin
 				string evaluatedText = "";
 				button2 = new TestLayoutProblem.MyButton
 				{
-					TextColor = Color.FromHex("b08f70"),
+						BorderColor = Color.FromHex("2e2e2e"),
+					TextColor = Color.FromHex("b59272"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(button2color),
+					BackgroundColor = Color.FromHex("2e2e2e"),
 					Text = "Duration",
-					HeightRequest = 45,
-					BorderRadius = 0,
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 
 				button = new TestLayoutProblem.MyButton
 				{
-					WidthRequest = 100,
-					HeightRequest = 50,
-					TextColor = Color.White,
-					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(bgColor),
-					FontSize = 13,
-					Text = minutesDuration,
-					BorderRadius = 2,
+						BorderWidth = 1,
+					BorderRadius = 1,
 					BorderColor = Color.FromHex("b08f70"),
-					                   			Margin=10
+					TextColor = Color.FromHex("b08f70"),
+					FontFamily = "Lato-Light",
+					BackgroundColor = Color.FromHex("2e2e2e"),
+					Text = minutesDuration,
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
+					//Margin = new Thickness(2, 2, 2, 2),
 
 				};
 			}
@@ -454,29 +458,47 @@ namespace FacebookLogin
 			}
 			else
 			{
-				string button2color = "FFFFFF";
+				string button2color = "2e2e2e";
 				string evaluatedText = "";
 				button2 = new TestLayoutProblem.MyButton
 				{
-					TextColor = Color.Black,
+					//TextColor = Color.Black,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(button2color),
+					//Text = aQuestion,
+					//HeightRequest = 45,
+					//BorderRadius = 0,
+					BorderColor = Color.FromHex("2e2e2e"),
+					TextColor = Color.FromHex("b59272"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(button2color),
+					BackgroundColor = Color.FromHex("2e2e2e"),
 					Text = aQuestion,
-					HeightRequest = 45,
-					BorderRadius = 0,
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 
 				button = new TestLayoutProblem.MyButton
 				{
-					BorderRadius = 0,
-					WidthRequest = 100,
-					HeightRequest = 50,
-					TextColor = Color.White,
+			//BorderRadius = 0,
+					//WidthRequest = 100,
+					//HeightRequest = 50,
+					//TextColor = Color.White,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(bgColor),
+					//FontSize = 13,
+					//Text = "0",
+					BorderWidth = 1,
+					BorderRadius = 1,
+					BorderColor = Color.FromHex("b08f70"),
+					TextColor = Color.FromHex("b08f70"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(bgColor),
-					FontSize = 13,
+					BackgroundColor = Color.FromHex("2e2e2e"),
 					Text = "0",
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 			}
@@ -645,25 +667,43 @@ namespace FacebookLogin
 				string evaluatedText = "";
 				button2 = new TestLayoutProblem.MyButton
 				{
-					TextColor = Color.Black,
+					//TextColor = Color.Black,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(button2color),
+					//Text = aQuestion,
+					//HeightRequest = 45,
+					//BorderRadius = 0,
+					BorderColor = Color.FromHex("2e2e2e"),
+					TextColor = Color.FromHex("b59272"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(button2color),
+					BackgroundColor = Color.FromHex("2e2e2e"),
 					Text = aQuestion,
-					HeightRequest = 45,
-					BorderRadius = 0,
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 
 				button = new TestLayoutProblem.MyButton
 				{
-					BorderRadius = 0,
-					WidthRequest = 100,
-					HeightRequest = 50,
-					TextColor = Color.White,
+	//BorderRadius = 0,
+					//WidthRequest = 100,
+					//HeightRequest = 50,
+					//TextColor = Color.White,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(bgColor),
+					//FontSize = 13,
+					//Text = "0",
+					BorderWidth = 1,
+					BorderRadius = 1,
+					BorderColor = Color.FromHex("b08f70"),
+					TextColor = Color.FromHex("b08f70"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(bgColor),
-					FontSize = 13,
-					Text = "0",
+					BackgroundColor = Color.FromHex("2e2e2e"),
+					Text = aValue.ToString(),
+					HeightRequest = 40,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 			}
@@ -778,29 +818,50 @@ namespace FacebookLogin
 			}
 			else
 			{
-				string button2color = "FFFFFF";
+				string button2color = "2e2e2e";
 				string evaluatedText = "";
 				button2 = new TestLayoutProblem.MyButton
 				{
-					TextColor = Color.Black,
+			//TextColor = Color.Black,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(button2color),
+					//Text = aQuestion,
+					//HeightRequest = 45,
+					//BorderRadius = 0,
+					BorderWidth = 1,
+					BorderRadius = 1,
+					BorderColor = Color.FromHex("b08f70"),
+					TextColor = Color.FromHex("b08f70"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(button2color),
+					BackgroundColor = Color.FromHex("4f514f"),
 					Text = "Add Injury",
-					HeightRequest = 45,
-					BorderRadius = 0,
+					HeightRequest = 50,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 
 				button = new TestLayoutProblem.MyButton
 				{
+					//BorderRadius = 0,
+					//WidthRequest = 100,
+					//HeightRequest = 50,
+					//TextColor = Color.White,
+					//FontFamily = "Lato-Light",
+					//BackgroundColor = Color.FromHex(bgColor),
+					//FontSize = 13,
+					//Text = "0",
+					WidthRequest=-35,
+					BorderWidth = 0,
 					BorderRadius = 0,
-					WidthRequest = 100,
-					HeightRequest = 50,
-					TextColor = Color.White,
+					BorderColor = Color.FromHex("b08f70"),
+					TextColor = Color.FromHex("FFFFFF"),
 					FontFamily = "Lato-Light",
-					BackgroundColor = Color.FromHex(bgColor),
-					FontSize = 13,
+					BackgroundColor = Color.FromHex("b08f70"),
 					Text = "+",
+					HeightRequest = 50,
+					FontSize = 22,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
 
 				};
 			}
@@ -944,7 +1005,7 @@ namespace FacebookLogin
 			{
 				teamID = "-1";
 			}
-			await Database.AddDiaryInput(Database.FacebookProfile.Id,teamID,praticeId,questionIds,questionValues,injury,injuryIntensity,minutesDuration);
+			await Database.AddDiaryInput(Database.FacebookProfile.Id,teamID,praticeId,questionIds,questionValues,injury,injuryIntensity,minutesDuration,Comment);
 
 			await Database.GetUserData(Database.FacebookProfile.Id);
 			HomePage.instance.LoadTrainingData();
